@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: #f9f9f9;
+            color: #333;
+        }
+        header{
+            background-color: #222;
+            padding: 1rem 0;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width:90%;
+            margin: auto;
+        }
+        .logo{
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-links{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a{
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .nav-links a:hover{
+            color: #f0a500;
+        }
+        .hero{
+            background: linear-gradient(to right,#007bff,#00c6ff);
+            color:#fff;
+            padding: 60px,20px;
+            text-align: center;
+        }
+        .hero h1{
+            font-size: 2.5rem;
+        }
+        .hero span{
+            color: #f0a500;
+        }
+        section{
+            padding: 40px,20px;
+            width: 90%;
+            margin: auto;
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #007bff;
+            margin-top: 10px;
+        }
+        .project-card{
+            background: #fff;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 5px solid #007bff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+        footer{
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        @media(max-width:768px){
+            .nav-links{
+                flex-direction: column;
+                gap: 10px;
+            }
+            .hero h1{
+                font-size: 2rem;
+            }
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="content">
+            <h1>Hello,I'm <span> Tejaswi </span></h1>
+            <p>A passionate Web Developer</p>
+        </div>
+    </section>
+    <section id="about">
+        <h2> About Me</h2>
+        <p> I am a front-end developer with a strong passion for building responsive and user-friendly websites using HTML, CSS, and JavaScript.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Project 1: Quiz App</h3>
+            <p> A fully interactive quiz app built with JavaScript and styled using CSS. It is a polished app with scoring.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email:xxxxxx@gmail.com</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Tejaswi. All rights reserved.</p>
+    </footer>
+</body>
+</html> 
